@@ -56,13 +56,13 @@ const handleCheckout = async () => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   return (
-    <div className="">
+    <div className=" flex flex-col text-center justify-center items-center mb-[10rem]">
       <h2 className='text-center text-2xl font-bold'>Your Cart</h2>
-      <p className='text-center text-2xl font-bold'>Welcome,  {user ? user.name : 'Guest'}</p>
+      <p className='text-center text-2xl font-bold mb-10'>Welcome,  {user ? user.name : 'Guest'}</p>
       <ul>
         {cartItems.map((item, index) => (
-          <li key={index} className='flex space-x-10 justify-center m-10 items-center'>
-            <div className='font-bold text-xl'>{item.name}</div>
+          <li key={index} className='grid lg:grid-cols-4 gap-4  justify-center text-center items-center   items-center'>
+            <div className='font-bold text-xl '>{item.name}</div>
             <div className='text-xl'>${item.price}</div>
             <div>
               <img src={item.image} alt={`${item.name} - ${item.color}`} className="w-[10rem]" />

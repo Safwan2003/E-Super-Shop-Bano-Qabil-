@@ -22,13 +22,15 @@ import tanFhoodie from './assets/Bella + Canvas Full Zip Hoodie/tan.png';
 import blacksweat from './assets/Sweatshirt/black.png';
 import navysweat from './assets/Sweatshirt/navy.png';
 import tansweat from './assets/Sweatshirt/heathergrey.png';
-import mgreen from './assets/Men Tshirt/green-shirt.png'
-import mblack from './assets/Men Tshirt/black-shirt.png'
-import msky from './assets/Men Tshirt/ice-shirt.png'
 
-import beigejersey from './assets/jersey/beige.png'
-import bluejersey from './assets/jersey/blue.png'
-import greyjersey from './assets/jersey/grey.png'
+
+import beigejersey from './assets/jersey/beige.png';
+import bluejersey from './assets/jersey/blue.png';
+import greyjersey from './assets/jersey/grey.png';
+
+import bluemtshirt from './assets/Men Tshirt/ice-shirt.png';
+import blackmtshirt from './assets/Men Tshirt/black-shirt.png';
+import greenmtshirt from './assets/Men Tshirt/green-shirt.png';
 
 import { useAuth0 } from '@auth0/auth0-react';
 
@@ -52,15 +54,7 @@ const App = () => {
 
       ]
     },
-    {
-      name:"Men Shirt ",
-      price: 15,
-      images: [
-        { color: "teal", image: mgreen },
-        { color: "black", image: mblack },
-        { color: "skyblue", image: msky }
-      ]
-    },
+    
     {
       name: "Kid's T-Shirt",
       price: 8,
@@ -102,6 +96,16 @@ const App = () => {
       ]
     },
 
+    {
+      name: "Men's TShirt",
+      price: 45,
+      images: [
+        { color: "skyblue", image: bluemtshirt },
+        { color: "black", image: blackmtshirt },
+        { color: "green", image: greenmtshirt },
+
+      ]
+    },
   ];
 
   const [cartItems, setCartItems] = useState([]);

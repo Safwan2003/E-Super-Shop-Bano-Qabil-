@@ -1,15 +1,18 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors'); // Import the cors middleware
+const bodyParser = require('body-parser'); // Import the bodyParser middleware
+const cors = require('cors');
 const app = express();
 const PORT = 3001;
+
+app.use(bodyParser.json({ limit: '10mb' })); // Add the limit option to bodyParser.json()
+app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' })); // Add the limit option to bodyParser.urlencoded()
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://safwanalimukaddam:0204kakwanplaza@cluster0.bzoy4t8.mongodb.net/your-database-name?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
 
 const cartItemSchema = new mongoose.Schema({
   name: String,

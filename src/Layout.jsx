@@ -4,6 +4,7 @@ import Logout from './Pages/Logout';
 import { useAuth0 } from '@auth0/auth0-react';
 import logo from './assets/logo.png';
 import "../src/Stylesheet/Layout.css";
+import Footer from './Pages/Footer';
 
 
 const Layout = () => {
@@ -26,7 +27,7 @@ const Layout = () => {
   return (
     <div>
       <nav>
-        <div className='container mx-auto flex items-center justify-between'>
+        <div className=' flex items-center justify-between bg-white  w-full p-5  pb-[2.5rem]  drop-shadow-2xl'>
           <Link to="/" className='text-2xl font-semibold'>
             <img src={logo} alt='logo' className='w-[10rem] '/>
           </Link>
@@ -92,6 +93,7 @@ const Layout = () => {
         </div>
       </nav>
       <Outlet />
+      <Footer/>
     </div>
   );
 };

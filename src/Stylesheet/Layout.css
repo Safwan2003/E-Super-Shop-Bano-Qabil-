@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 :root{
     --bg-color: #FFFFFF;
-    --second-bg-color: #212121;
+    --second-bg-color: #ffff;
     --third-bg-color: #5161F1;
-    --text-color: #f1f1f1;
+    --text-color: black;
     --second-text-color: #1d1d1d;
     --button-color: #252243;
 }
@@ -36,7 +36,8 @@ nav ul li {
 
 nav ul li{
     text-decoration: none;
-    color: #fff;
+    color: black;
+    
 }
 nav ul li span{
     position: relative;

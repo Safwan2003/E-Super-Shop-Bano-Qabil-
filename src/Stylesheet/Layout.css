@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+:root{
+    --bg-color: #FFFFFF;
+    --second-bg-color: #212121;
+    --third-bg-color: #5161F1;
+    --text-color: #f1f1f1;
+    --second-text-color: #1d1d1d;
+    --button-color: #252243;
+}
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--second-bg-color);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+
+nav ul li{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li span{
+    position: relative;
+    letter-spacing: 0.05em;
+    transition: 0.25s;
+    text-transform: uppercase;
+}
+
+nav ul li:hover span{
+    color: #00ec00;
+    text-shadow: 0 0 5px #fff,
+    0 0 15px #00ec00,
+    0 0 30px #fff,
+    0 0 60px #fff,
+    0 0 100px #fff;
+}
+
+
+/* Animations.css */
+
+ .animate-navigation span {
+    display: inline-block;
+    transform: translateY(100%);
+    /* opacity: 0; */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .animate-navigation li a:hover span {
+    transform: translateY(0);
+    opacity: 1;
+  } 
+
+
+
+ 

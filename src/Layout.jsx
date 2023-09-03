@@ -80,7 +80,7 @@ const Layout = () => {
             <li><Link to="/products" className='block'>Products</Link></li>
             <li><Link to="/cartlist" className='block'>Cartlist</Link></li>
             {isAuthenticated ? (
-            <div className=' lg:flex items-center space-x-4'>
+            <div className=' lg:flex items-center space-x-4 space-y-5'>
               <div className='bg-[#ffa458] p-2 px-3 rounded-lg'>
                 <Logout />
               </div>

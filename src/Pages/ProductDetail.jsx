@@ -83,7 +83,7 @@ const ProductDetail = ({ tShirts, addToCart , user }) => {
   }
 
   return (
-    <div className='flex justify-center items-center space-x-10 px-[10rem]'>
+    <div className='flex flex-col lg:flex-row justify-center items-center space-x-10 px-[10rem]'>
       <div className="flex flex-col items-center p-4">
         <h2 className="text-2xl font-semibold">{product.name}</h2>
         <div className="flex mt-4 gap-2">

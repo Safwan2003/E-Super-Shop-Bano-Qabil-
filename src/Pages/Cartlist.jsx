@@ -10,58 +10,94 @@ const Cartlist = ({ cartItems, user, handleRemoveFromCart }) => {
 
 
   // ... your imports and component code
-  const handleCheckout = async () => {
-    try {
-      console.log('Sending checkout request...');
+  // const handleCheckout = async () => {
+  //   try {
+  //     console.log('Sending checkout request...');
   
-      const combinedData = {
-        user,
-        cartItems,
-      };
+  //     const combinedData = {
+  //       user,
+  //       cartItems,
+  //     };
   
-      const response = await fetch('http://localhost:3001/api/checkout', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(combinedData), // Combine user and cartItems data
-      });
+  //     const response = await fetch('http://localhost:3001/api/checkout', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(combinedData), // Combine user and cartItems data
+  //     });
   
-      if (response.ok) {
-        console.log('Checkout successful!');
-        // Handle successful checkout (e.g., clear the cart, show a success message, etc.)
+  //     if (response.ok) {
+  //       console.log('Checkout successful!');
+  //       // Handle successful checkout (e.g., clear the cart, show a success message, etc.)
   
-        // Show a success message using SweetAlert2
-        Swal.fire({ 
-          icon: 'success',
-          title: 'Checkout Successful',
-          text: 'Thank you for your purchase!',
-        });
+  //       // Show a success message using SweetAlert2
+  //       Swal.fire({ 
+  //         icon: 'success',
+  //         title: 'Checkout Successful',
+  //         text: 'Thank you for your purchase!',
+  //       });
   
-        // You can add code here to clear the cart or perform other actions on success.
-      } else {
-        console.log('Checkout failed.');
-        // Handle checkout failure
+  //       // You can add code here to clear the cart or perform other actions on success.
+  //     } else {
+  //       console.log('Checkout failed.');
+  //       // Handle checkout failure
   
-        // Show an error message using SweetAlert2
-        Swal.fire({
-          icon: 'error',
-          title: 'Checkout Failed',
-          text: 'An error occurred during checkout. Please try again later.',
-        });
-      }
-    } catch (error) {
-      console.error(error);
-      // Show an error message using SweetAlert2
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'An error occurred during checkout. Please try again later.',
-      });
-    }
-  };
+  //       // Show an error message using SweetAlert2
+  //       Swal.fire({
+  //         icon: 'error',
+  //         title: 'Checkout Failed',
+  //         text: 'An error occurred during checkout. Please try again later.',
+  //       });
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     // Show an error message using SweetAlert2
+  //     Swal.fire({
+  //       icon: 'error',
+  //       title: 'Error',
+  //       text: 'An error occurred during checkout. Please try again later.',
+  //     });
+  //   }
+  // };
   
 
+const handleCheckout = async () => {
+  try {
+    console.log('Sending checkout request...');
+
+    const combinedData = {
+      user,
+      cartItems,
+    };
+
+    // Store the combined data in local storage
+    localStorage.setItem('checkoutData', JSON.stringify(combinedData));
+
+    // Simulate a delay for demonstration purposes (remove this in production)
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    console.log('Checkout successful!');
+    // Handle successful checkout (e.g., clear the cart, show a success message, etc.)
+
+    // Show a success message using SweetAlert2
+    Swal.fire({ 
+      icon: 'success',
+      title: 'Checkout Successful',
+      text: 'Thank you for your purchase!',
+    });
+
+    // You can add code here to clear the cart or perform other actions on success.
+  } catch (error) {
+    console.error(error);
+    // Show an error message using SweetAlert2
+    Swal.fire({
+      icon: 'error',
+      title: 'Checkout Failed',
+      text: 'An error occurred during checkout. Please try again later.',
+    });
+  }
+};
 
 
 

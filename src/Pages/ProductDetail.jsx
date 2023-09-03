@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
+import Swal from 'sweetalert2';
+
 
 const ProductDetail = ({ tShirts, addToCart , user }) => {
   const { productId } = useParams();
@@ -53,13 +55,21 @@ const ProductDetail = ({ tShirts, addToCart , user }) => {
         addToCart({
           name: product.name,
           price: product.price,
-          // color: selectedImage.color, // Access the color property from selectedImage
-          image: selectedImage // Add the selected image to the cart
+          image: selectedImage,
         });
-        alert("Product Added Successfully");
+  
+        Swal.fire({
+          icon: 'success',
+          title: 'Product Added Successfully',
+          showConfirmButton: false,
+          timer: 1500, // Close the alert after 1.5 seconds
+        });
       }
     } else {
-      alert('Please log in to add products to the cart.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Please log in to add products to the cart.',
+      });
     }
   };
   

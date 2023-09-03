@@ -46,7 +46,7 @@ const Layout = () => {
             </button>
           </div>
 
-          <ul className={`hidden lg:flex space-x-6 items-center animate-navigation`}>
+          <ul className={`hidden lg:flex space-x-6 items-center animate-navigatio`}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/products">Products</Link></li>
             <li><Link to="/cartlist">Cartlist</Link></li>
@@ -65,7 +65,7 @@ const Layout = () => {
           ) : (
             <button
               onClick={loginWithRedirect}
-              className='p-2 px-3 bg-blue-500 text-white rounded-lg max-sm:hidden'
+              className='p-2 px-3 bg-[#ffa458] text-white rounded-lg max-sm:hidden'
             >
               Login
             </button>
@@ -73,9 +73,9 @@ const Layout = () => {
         </div>
 
         <div
-          className={`lg:hidden mt-3 ${mobileMenuOpen ? 'block' : 'hidden'}`}
+          className={`lg:hidden mt-3  ${mobileMenuOpen ? 'flex flex-col' : 'hidden'}`}
         >
-          <ul className='space-y-3'>
+          <ul className='space-y-3 flex flex-col'>
             <li><Link to="/" className='block'>Home</Link></li>
             <li><Link to="/products" className='block'>Products</Link></li>
             <li><Link to="/cartlist" className='block'>Cartlist</Link></li>
@@ -83,7 +83,7 @@ const Layout = () => {
               <li>
                 <button
                   onClick={loginWithRedirect}
-                  className='block bg-blue-500 text-white rounded-lg p-2 px-3 w-full text-center'
+                  className='block bg-[#ffa458] text-white rounded-lg p-2 px-3 w-full text-center'
                 >
                   Login
                 </button>

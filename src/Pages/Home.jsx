@@ -10,11 +10,25 @@ import img4 from "../assets/grid-image-3.jpg";
 import img5 from "../assets/grid-image-4.jpg";
 import img6 from "../assets/HP_SEO_bubble_5spodEN.webp";
 import slide1 from "../assets/slide1.jpg";
+import slide2 from "../assets/slide2.jpg";
+
+
+
+import market from '../assets/market.png';
+import verify from '../assets/verify.png';
+import handshake from '../assets/handshake.png';
+
+import brand from '../assets/brand.png';
+import woocommerce from '../assets/woocommerce.png';
+import shopify from '../assets/shopify.png';
+import etsy from '../assets/etsy.png';
+import ebay from '../assets/ebay.png';
+import appstore from '../assets/app-store.png';
 
 
 const Home = () => {
   return (
-    <div className="w-full py-5">
+    <div className="w-full ">
       <Carousel
         showArrows={true}
         showThumbs={false}
@@ -26,12 +40,14 @@ const Home = () => {
         infiniteLoop={true} // Loop through slides infinitely
         className="w-full h-full" // Center and set max width
       >
-        <div className=" h-[30rem] flex justify-center items-center text-white text-4xl">
-        <img src={slide1} alt="slide1" />
+        <div className=" h-[40rem] flex justify-center items-center text-white text-4xl">
+        <img src={slide1} alt="slide1" className='h-[40rem]'/> </div>
+        <div className=" h-[40rem] flex justify-center items-center text-white text-4xl">
+<img  src={slide2} alt='slide2' className=''  />
+
         </div>
-        <div className="bg-green-500 h-[30rem] flex justify-center items-center text-white text-4xl">2</div>
-        <div className="bg-yellow-500 h-[30rem] flex justify-center items-center text-white text-4xl">3</div>
-        <div className="bg-green-200 h-[30rem] flex justify-center items-center text-white text-4xl">4</div>
+        {/* <div className="bg-yellow-500 h-[30rem] flex justify-center items-center text-white text-4xl">3</div>
+        <div className="bg-green-200 h-[30rem] flex justify-center items-center text-white text-4xl">4</div> */}
 
         {/* Add more slides here */}
       </Carousel>
@@ -298,6 +314,57 @@ const Home = () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<section className='flex bg-gray-100    text-start justify-center items-center h-[25rem] space-x-[10rem] my-10'  > 
+
+<div className='text-2xl font-semibold '>
+  <div>ARE YOU CREATIVE?</div>
+  <div>MONETIZE YOUR TALENTS!</div>
+<button className='bg-green-500 text-white mt-5 p-2 rounded-lg drop-shadow-2xl ' >Buy Now</button>
+</div>
+
+<div className='space-y-5 text-xl'>
+<div className='flex space-x-3 items-center'><img src={verify} alt='verify-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Always Free</b> <br></br>Earn money by selling your designs on over 250 products. No costs.</div></div>
+
+<div className='flex space-x-3 items-center'><img src={handshake} alt='handshake-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Risk Free</b><br></br> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
+
+<div className='flex space-x-3 items-center'><img src={market} alt='market-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Various Marketplaces</b><br></br> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<div className='flex flex-col justify-center text-center items-center '>
+<div className='font-semibold text-3xl  font-mono '>#WE Are Available  </div>
+<div className='text-xl font-thin flex text-white   justify-center items-center  text-center m-3 w-[10rem]'><p className='bg-[#ffa458] p-2 rounded-full  '> At Your Reach</p> </div>
+<section className='flex my-10 justify-center space-x-[5rem]'>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={shopify} className='w-[5rem]'  /></div>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={etsy} className='w-[5rem]'  /></div>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={ebay} className='w-[5rem]'  /></div>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={appstore} className='w-[5rem]'  /></div>
+<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={brand} className='w-[5rem]'  /></div>
+
+</section>
+</div>
 
 
                     </div>

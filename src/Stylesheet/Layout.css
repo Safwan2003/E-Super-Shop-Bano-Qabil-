@@ -47,9 +47,9 @@ nav ul li span{
 }
 
 nav ul li:hover span{
-    color: #00ec00;
+    color: #ffa458;
     text-shadow: 0 0 5px #fff,
-    0 0 15px #00ec00,
+    0 0 15px #ffa458,
     0 0 30px #fff,
     0 0 60px #fff,
     0 0 100px #fff;

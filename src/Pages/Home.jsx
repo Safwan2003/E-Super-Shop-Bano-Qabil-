@@ -352,14 +352,25 @@ const Home = () => {
 <div className='flex flex-col justify-center text-center items-center '>
 <div className='font-mono font-semibold  lg:text-3xl   '>#WE Are Available  </div>
 <div className='text-xl font-thin flex text-white   justify-center items-center  text-center m-3 w-[10rem]'><p className='bg-[#ffa458] p-2 rounded-full  '> At Your Reach</p> </div>
-<section className='flex my-10 justify-center space-x-[5rem] p-[15rem]'>
-<div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
+<section className=''>
+  <Carousel
+  showArrows={true}
+  showThumbs={false}
+  showStatus={false}
+  showIndicators={false}
+  dynamicHeight={true}
+  autoPlay={true} // Autoplay enabled
+  interval={5000} // Autoplay interval in milliseconds
+  infiniteLoop={true} // Loop through slides infinitely
+  className="w-full  "
+>
+ <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={shopify} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={etsy} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={ebay} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={appstore} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={brand} className='w-[5rem]'  /></div>
-
+</Carousel>
 </section>
 </div>
 

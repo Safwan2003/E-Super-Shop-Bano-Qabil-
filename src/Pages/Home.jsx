@@ -364,13 +364,15 @@ const Home = () => {
   infiniteLoop={true} // Loop through slides infinitely
   className="w-[5rem]"
 >
+   <div>
  <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={shopify} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={etsy} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={ebay} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={appstore} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={brand} className='w-[5rem]'  /></div>
-</Carousel>
+</div>
+   </Carousel>
 </section>
 </div>
 

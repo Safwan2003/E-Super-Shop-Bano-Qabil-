@@ -65,7 +65,15 @@ const Cartlist = ({ cartItems, user, handleRemoveFromCart }) => {
 const handleCheckout = async () => {
   try {
     console.log('Sending checkout request...');
-
+ if (cartItems.length === 0) {
+      // Display a SweetAlert message for adding products
+      Swal.fire({
+        icon: 'info',
+        title: 'Add Products',
+        text: 'You have no products in your cart. Please add products before checking out.',
+      });
+      return; // Stop further execution
+    }
     const combinedData = {
       user,
       cartItems,

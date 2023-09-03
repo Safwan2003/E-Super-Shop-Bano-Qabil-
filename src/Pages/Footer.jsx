@@ -10,7 +10,7 @@ const Footer = () => {
 <hr></hr>      <footer className="bg-white p-5 sm:drop-shadow-2xl md:drop-shadow-2xl lg:drop-shadow-2xl ">
         <div className="flex flex-col sm:flex-row justify-between">
           <div className="footer__content">
-            <a href="index.html" className="footer__logo">
+            <a href="https://e-super-shop-bano-qabil.vercel.app/" className="footer__logo">
               <img src={logo} alt="" className="w-[10rem] m-3" />
             </a>
             <p className="sm:w-[30rem] md:w-[50rem] mt-[2rem]">
@@ -18,12 +18,12 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row my-5">
               <h3 className="text-2xl font-bold">Newsletter</h3>
-              <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[8rem] top-[3px] sm:ml-2 mt-2 sm:mt-0"></span>
+              <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[8rem] top-[3px] "></span>
             </div>
             <p className="font-mono">Subscribe and Get Recent News & Updates.</p>
             <div className="my-2 sm:space-x-4 md:space-x-10">
               <input type="text" placeholder="Enter your Email Address" className="border-2 px-3 p-2 sm:w-[15rem] md:w-[25rem]" />
-              <button className="bg-[#ffa458] p-2 px-3 text-white">Subscribe</button>
+              <button className="bg-[#ffa458] p-2 px-3 text-white m-1">Subscribe</button>
             </div>
           </div>
 

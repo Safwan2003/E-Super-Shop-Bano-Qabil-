@@ -60,7 +60,7 @@ const Home = () => {
           <div className="homepage-topics__tile col-12 col-md-8">
             <a
               className="homepage-topics__link"
-              href="http://localhost:3000/products"
+              href="https://e-super-shop-bano-qabil.vercel.app/products"
               data-tracking="Homepage - Tiles - Topics - 16/01/2023 - /clothing/t-shirts/summer/"
               data-handlelinks=""
             >
@@ -99,7 +99,7 @@ const Home = () => {
               <div className="col-6 col-md-12">
                 <a
                   className="homepage-topics__link"
-                  href="http://localhost:3000/products"
+                  href="https://e-super-shop-bano-qabil.vercel.app/products"
                   data-tracking="Homepage - Tiles - Topics - 16/01/2023 - /smileyworld/"
                   data-handlelinks=""
                 >
@@ -133,7 +133,7 @@ const Home = () => {
               <div className="last-child col-6 col-md-12">
                 <a
                   className="homepage-topics__link"
-                  href="http://localhost:3000/products"
+                  href="https://e-super-shop-bano-qabil.vercel.app/products"
                   data-tracking="Homepage - Tiles - Topics - 16/01/2023 - Embroidery"
                   data-handlelinks=""
                 >
@@ -177,7 +177,7 @@ const Home = () => {
           <div className="homepage-topics__tile col-6">
             <a
               className="homepage-topics__link"
-              href="http://localhost:3000/products"
+              href="https://e-super-shop-bano-qabil.vercel.app/products"
               data-tracking="Homepage - Tiles - Topics - 16/01/2023 - /home-living/water-bottles/"
               data-handlelinks=""
             >
@@ -217,7 +217,7 @@ const Home = () => {
           <div className="homepage-topics__tile col-6">
   <a
     className="homepage-topics__link"
-    href="http://localhost:3000/products"
+    href="https://e-super-shop-bano-qabil.vercel.app/products"
     data-tracking="Homepage - Tiles - Topics - 16/01/2023 - /accessories/bags-backpacks/tote-bags/"
     data-handlelinks=""
   >

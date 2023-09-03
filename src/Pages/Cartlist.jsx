@@ -112,7 +112,7 @@ const handleCheckout = async () => {
   return (
     <div className=" flex flex-col text-center justify-center items-center mb-[10rem]">
       <h2 className='text-center text-2xl font-bold'>Your Cart</h2>
-      <p className='text-center text-2xl font-bold mb-10'>Welcome,  {user ? user.name : 'Guest'}</p>
+      <p className='text-center text-2xl font-bold mb-10'>Welcome, <br></br> {user ? user.name : 'Guest'}</p>
       <ul>
         {cartItems.map((item, index) => (
           <li key={index} className='grid lg:grid-cols-4 gap-4  justify-center text-center items-center   items-center'>

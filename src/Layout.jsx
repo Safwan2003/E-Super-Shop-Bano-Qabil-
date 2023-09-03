@@ -79,16 +79,24 @@ const Layout = () => {
             <li><Link to="/" className='block'>Home</Link></li>
             <li><Link to="/products" className='block'>Products</Link></li>
             <li><Link to="/cartlist" className='block'>Cartlist</Link></li>
-            {!isAuthenticated && (
-              <li>
-                <button
-                  onClick={loginWithRedirect}
-                  className='block bg-[#ffa458] text-white rounded-lg p-2 px-3 w-full text-center'
-                >
-                  Login
-                </button>
-              </li>
-            )}
+            {isAuthenticated ? (
+            <div className='hidden lg:flex items-center space-x-4'>
+              <div className='bg-[#ffa458] p-2 px-3 rounded-lg'>
+                <Logout />
+              </div>
+              <div className='flex flex-col items-center space-y-1'>
+                <img src={user.picture} alt={user.name} className='rounded-full w-10 h-10' />
+                <h2 className='text-sm'>{user.name}</h2>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={loginWithRedirect}
+              className='p-2 px-3 bg-[#ffa458] text-white rounded-lg max-sm:hidden'
+            >
+              Login
+            </button>
+          )}
           </ul>
         </div>
       </nav>

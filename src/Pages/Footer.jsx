@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row my-5">
               <h3 className="text-2xl font-bold">Newsletter</h3>
-              <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[15rem] lg:right-[7rem] top-[4px] "></span>
+              <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[10rem] lg:right-[7rem] top-[4px] "></span>
             </div>
             <p className="font-mono">Subscribe and Get Recent News & Updates.</p>
             <div className="my-2 sm:space-x-4 md:space-x-10">

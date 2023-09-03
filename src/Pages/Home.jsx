@@ -350,9 +350,9 @@ const Home = () => {
 
 
 <div className='flex flex-col justify-center text-center items-center '>
-<div className='font-semibold lg:text-3xl  font-mono '>#WE Are Available  </div>
+<div className='font-mono font-semibold  lg:text-3xl   '>#WE Are Available  </div>
 <div className='text-xl font-thin flex text-white   justify-center items-center  text-center m-3 w-[10rem]'><p className='bg-[#ffa458] p-2 rounded-full  '> At Your Reach</p> </div>
-<section className='flex my-10 justify-center space-x-[5rem]'>
+<section className='flex my-10 justify-center space-x-[5rem] h-[10rem]'>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={shopify} className='w-[5rem]'  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={etsy} className='w-[5rem]'  /></div>

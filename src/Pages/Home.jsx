@@ -54,7 +54,7 @@ const Home = () => {
 
       <section className="homepage-topics">
       <div className="container">
-        <h2 className=" text-center text-4xl tracking-[.5rem] font-mono font-bold p-10">#MAKEITYOURS</h2>
+        <h2 className=" text-center lg:text-4xl tracking-[.5rem] font-mono font-bold py-10">#MAKEITYOURS</h2>
 
         <div className="row tiles">
           <div className="homepage-topics__tile col-12 col-md-8">

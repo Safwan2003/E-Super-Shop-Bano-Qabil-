@@ -362,7 +362,7 @@ const Home = () => {
   autoPlay={true} // Autoplay enabled
   interval={5000} // Autoplay interval in milliseconds
   infiniteLoop={true} // Loop through slides infinitely
-  className="w-full  "
+  className="  "
 >
  <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={woocommerce} className='w-[5rem]  '  /></div>
 <div className='grayscale hover:grayscale-0 cursor-pointer	 opacity-50 hover:opacity-100 rounded-full'><img src={shopify} className='w-[5rem]'  /></div>

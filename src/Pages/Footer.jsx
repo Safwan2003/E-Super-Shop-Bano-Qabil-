@@ -7,7 +7,7 @@ import discounted from '../assets/price-tag.png';
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-white p-5 sm:drop-shadow-2xl md:drop-shadow-2xl lg:drop-shadow-2xl">
+<hr></hr>      <footer className="bg-white p-5 sm:drop-shadow-2xl md:drop-shadow-2xl lg:drop-shadow-2xl ">
         <div className="flex flex-col sm:flex-row justify-between">
           <div className="footer__content">
             <a href="index.html" className="footer__logo">
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row my-5">
               <h3 className="text-2xl font-bold">Newsletter</h3>
-              <span className="border-b-4 border-[#ffa458] w-[7rem] sm:ml-2 mt-2 sm:mt-0"></span>
+              <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[8rem] top-[3px] sm:ml-2 mt-2 sm:mt-0"></span>
             </div>
             <p className="font-mono">Subscribe and Get Recent News & Updates.</p>
             <div className="my-2 sm:space-x-4 md:space-x-10">
@@ -63,7 +63,8 @@ const Footer = () => {
 
         <br></br>
         <hr></hr>
-        <p className="font-mono my-5">2023 E-Super-Shop Copyright</p>
+        <p className="font-mono my-5 text-center">2023 E-Super-Shop Copyright <br></br><span className='text-[#ffa458] font-bold'  >Safwan Ali & Muhammad Shaffan </span></p>
+   <hr></hr>
       </footer>
     </div>
   );

@@ -29,28 +29,26 @@ import appstore from '../assets/app-store.png';
 const Home = () => {
   return (
     <div className="w-full ">
-      <Carousel
-        showArrows={true}
-        showThumbs={false}
-        showStatus={false}
-        showIndicators={false}
-        dynamicHeight={true}
-        autoPlay={true} // Autoplay enabled
-        interval={5000} // Autoplay interval in milliseconds
-        infiniteLoop={true} // Loop through slides infinitely
-        className="w-full h-full" // Center and set max width
-      >
-        <div className=" h-[40rem] flex justify-center items-center text-white text-4xl">
-        <img src={slide1} alt="slide1" className='h-[40rem]'/> </div>
-        <div className=" h-[40rem] flex justify-center items-center text-white text-4xl">
-<img  src={slide2} alt='slide2' className=''  />
+     <Carousel
+  showArrows={true}
+  showThumbs={false}
+  showStatus={false}
+  showIndicators={false}
+  dynamicHeight={true}
+  autoPlay={true} // Autoplay enabled
+  interval={5000} // Autoplay interval in milliseconds
+  infiniteLoop={true} // Loop through slides infinitely
+  className="w-full"
+>
+  <div className="sm:h-[20rem] md:h-[30rem] lg:h-[40rem] flex justify-center items-center text-white text-4xl">
+    <img src={slide1} alt="slide1" className="h-full" />
+  </div>
+  <div className="sm:h-[20rem] md:h-[30rem] lg:h-[40rem] flex justify-center items-center text-white text-4xl">
+    <img src={slide2} alt="slide2" className="h-full" />
+  </div>
+  {/* Add more slides here */}
+</Carousel>
 
-        </div>
-        {/* <div className="bg-yellow-500 h-[30rem] flex justify-center items-center text-white text-4xl">3</div>
-        <div className="bg-green-200 h-[30rem] flex justify-center items-center text-white text-4xl">4</div> */}
-
-        {/* Add more slides here */}
-      </Carousel>
 
 
 
@@ -84,14 +82,14 @@ const Home = () => {
                 data-srcset={img1}
                    />
               </picture>
-              <div className="homepage-topics__overlay">
-                <span className="homepage-topics__text mobile">
+              <div className="homepage-topics__overlay ">
+                <span className="homepage-topics__text mobile ">
                   ❤️️ Designs
                   <svg className="icon icon--right">
                     <use xlinkHref="/pages/_components/svg/global.svg#right" />
                   </svg>
                 </span>
-                <span className="homepage-topics__text desktop">❤️️ Designs</span>
+                <span className="homepage-topics__text desktop ">❤️️ Designs</span>
               </div>
             </a>
           </div>
@@ -324,23 +322,22 @@ const Home = () => {
 
 
 
+<section className='grid lg:grid-cols-2 grid-cols-1  gap-4 bg-gray-100 overflow-hidden lg:px-[10rem] text-start justify-center items-center lg:h-[25rem] p-5 lg:space-x-[10rem]  my-10' >
 
-<section className='flex bg-gray-100    text-start justify-center items-center h-[25rem] space-x-[10rem] my-10'  > 
+  <div className='text-2xl max-md:text-center font-semibold'>
+    <div>ARE YOU CREATIVE?</div>
+    <div>MONETIZE YOUR TALENTS!</div>
+    <button className='bg-[#ffa458] text-white mt-5 p-2 rounded-lg drop-shadow-2xl'>Buy Now</button>
+  </div>
 
-<div className='text-2xl font-semibold '>
-  <div>ARE YOU CREATIVE?</div>
-  <div>MONETIZE YOUR TALENTS!</div>
-<button className='bg-green-500 text-white mt-5 p-2 rounded-lg drop-shadow-2xl ' >Buy Now</button>
-</div>
+  <div className='space-y-5 p-3 text-xl w-full sm:w-[10rem]'>
+    <div className='grid lg:grid-cols-2 grid-cols-1 max-md:place-items-center max-md:text-center items-center'><img src={verify} alt='verify-logo' className='w-12 h-12' /> <div className='w-full sm:w-[25rem]'><b>Always Free</b> <br />Earn money by selling your designs on over 250 products. No costs.</div></div>
 
-<div className='space-y-5 text-xl'>
-<div className='flex space-x-3 items-center'><img src={verify} alt='verify-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Always Free</b> <br></br>Earn money by selling your designs on over 250 products. No costs.</div></div>
+    <div className='grid lg:grid-cols-2 grid-cols-1 max-md:place-items-center max-md:text-center items-center'><img src={handshake} alt='handshake-logo' className='w-12 h-12' /> <div className='w-full sm:w-[35rem]'><b>Risk Free</b><br /> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
 
-<div className='flex space-x-3 items-center'><img src={handshake} alt='handshake-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Risk Free</b><br></br> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
+    <div className='grid lg:grid-cols-2 grid-cols-1 max-md:place-items-center max-md:text-center items-center'><img src={market} alt='market-logo' className='w-12 h-12' /> <div className='w-full sm:w-[35rem]'><b>Various Marketplaces</b><br /> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
 
-<div className='flex space-x-3 items-center'><img src={market} alt='market-logo' className='w-12 h-12 ' /> <div className='w-[35rem]'><b>Various Marketplaces</b><br></br> We take care of everything – from order processing to shipping, handling payments, and customer service.</div></div>
-
-</div>
+  </div>
 
 </section>
 

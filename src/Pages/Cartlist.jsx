@@ -32,7 +32,7 @@ const Cartlist = ({ cartItems, user, handleRemoveFromCart }) => {
         // Handle successful checkout (e.g., clear the cart, show a success message, etc.)
   
         // Show a success message using SweetAlert2
-        Swal.fire({
+        Swal.fire({ 
           icon: 'success',
           title: 'Checkout Successful',
           text: 'Thank you for your purchase!',

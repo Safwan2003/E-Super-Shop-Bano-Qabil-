@@ -92,7 +92,7 @@ const Layout = () => {
           ) : (
             <button
               onClick={loginWithRedirect}
-              className='p-2 px-3 bg-[#ffa458] text-white rounded-lg max-sm:hidden'
+              className='p-2 px-3 bg-[#ffa458] text-white rounded-lg '
             >
               Login
             </button>

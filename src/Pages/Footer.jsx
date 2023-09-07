@@ -7,22 +7,23 @@ import discounted from '../assets/price-tag.png';
 const Footer = () => {
   return (
     <div>
-<hr></hr>      <footer className="bg-white p-5 sm:drop-shadow-2xl md:drop-shadow-2xl lg:drop-shadow-2xl ">
-        <div className="flex flex-col sm:flex-row justify-between">
+      <hr />
+      <footer className="bg-white p-5 overflow-hidden drop-shadow-2xl">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="footer__content">
             <a href="https://e-super-shop-bano-qabil.vercel.app/" className="footer__logo">
               <img src={logo} alt="" className="w-[10rem] m-3" />
             </a>
-            <p className="sm:w-[30rem] md:w-[50rem] mt-[2rem]">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sequi repudiandae quod corporis, dignissimos rem autem ipsum enim fugiat omnis, dolor deleniti dicta voluptatum, excepturi quas libero maiores sunt amet voluptates unde sint? Facilis eaque, facere laboriosam temporibus ducimus recusandae impedit illum vel quia at architecto esse quaerat numquam vero?
+            <p className="md:w-[30rem] lg:w-[50rem] mt-[2rem]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.Accusantium repellendus consequatur quasi optio ullam aliquam, inventore temporibus excepturi velit recusandae, praesentium enim quo eos dolorem libero aperiam rerum laudantium quas.
             </p>
-            <div className="flex flex-col sm:flex-row my-5">
+            <div className="flex flex-col md:flex-row my-5">
               <h3 className="text-2xl font-bold">Newsletter</h3>
               <span className="border-b-4 border-[#ffa458] w-[7rem] relative right-[10rem] lg:right-[7rem] top-[4px] "></span>
             </div>
             <p className="font-mono">Subscribe and Get Recent News & Updates.</p>
-            <div className="my-2 sm:space-x-4 md:space-x-10">
-              <input type="text" placeholder="Enter your Email Address" className="border-2 px-3 p-2 sm:w-[15rem] md:w-[25rem]" />
+            <div className="my-2 md:space-x-4 lg:space-x-10">
+              <input type="text" placeholder="Enter your Email Address" className="border-2 px-3 p-2 md:w-[15rem] lg:w-[25rem]" />
               <button className="bg-[#ffa458] p-2 px-3 text-white m-1">Subscribe</button>
             </div>
           </div>
@@ -61,10 +62,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <br></br>
-        <hr></hr>
-        <p className="font-mono my-5 text-center">2023 E-Super-Shop Copyright <br></br><span className='text-[#ffa458] font-bold'  >Safwan Ali & Muhammad Shaffan </span></p>
-   <hr></hr>
+        <br />
+        <hr />
+        <p className="font-mono my-5 text-center">2023 E-Super-Shop Copyright <br /><span className='text-[#ffa458] font-bold' >Safwan Ali & Muhammad Shaffan </span></p>
+        <hr />
       </footer>
     </div>
   );
